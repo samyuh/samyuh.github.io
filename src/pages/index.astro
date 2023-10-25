@@ -9,23 +9,39 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 <html lang="en">
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+
+		<style>
+			h2 {
+				color: rgb(255, 255, 255);
+				font-size: 3em;
+				line-height: 1.3em;
+			}
+		</style>
 	</head>
 	<body>
 		<Header title={SITE_TITLE} />
 		<main>
-			<h2>Welcome!</h2>
-			<p>
-				My name is Diogo Samuel Fernandes, but I'm more commonly known as Samuh! Currently, I am a software engineer at Feedzai.
-			</p>
+			<div class="flex mt-4">
+				<div class="w-2/3" >
+					<h2 class="pb-8"><b>Hi! I am Samuh,<br> a Software Engineer</b></h2>
+					<p>
+						I'm currently a Software Engineer working at Feedzai. 
+					</p>
+					
+					<p class="mt-2">I hold a M.Sc. degree in Informatics and Computer Engineering from FEUP.</p>
 
-			<p>
-				 I hold an MSc. in Informatics and Computer Engineering and am passionate about taking on new challenges and solving intricate problems. My primary interests revolve around distributed systems and machine learning, as they allow me to tackle complex issues, streamline processes, and build reliable, scalable solutions.
-			</p>
-			
-			<p>
-				In my leisure time, I like to read books, listen to music, and gazing the stars at night.
-			</p>
-			
+					<p class="mt-2">
+						My interests lie in the area of distributed systems, optimization and machine learning.
+					</p>
+				</div>
+				<div class="w-1/3 mx-auto">
+					<img src="https://picsum.photos/400/200" alt="Image Placeholder" >
+				</div>
+			</div>
+
+			<div class="mt-32">
+				<h2 class="text-center"><b>Skills</b></h1>
+			</div>
 		</main>
 		<Footer />
 	</body>
