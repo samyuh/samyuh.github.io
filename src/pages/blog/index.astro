@@ -28,13 +28,23 @@ const posts = (await getCollection('blog')).sort(
 				text-decoration-color: rgb(var(--accent));
 				transition: 0.2s ease;
 			}
+
+			h1 {
+				color: rgb(255, 255, 255);
+				font-size: 3em;
+			}
+
+			a:hover {
+				text-decoration: underline;
+			}
 			
 		</style>
 	</head>
 	<body>
 		<Header />
 		<main>
-			<section>
+			<h1>Blog Articles</h1>
+			<section class="mt-8">
 				<ul>
 					{
 						posts.map((post) => (
