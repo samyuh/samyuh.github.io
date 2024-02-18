@@ -38,14 +38,22 @@ body {
     background-color: #111111;
 	color: #f1f1f1; /* Text color */
 	line-height: 1.7;
+
+	min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 main {
-    width: 1280px;
+    width: 960px;
 	max-width: calc(100% - 2em);
     margin: 0 auto;
-	padding-top: 3em;
     padding-bottom: 3em;
     padding-left: 2em;
     padding-right: 2em;
+}
+
+h1 {
+	color: rgb(255, 255, 255);
+	font-size: 3em;
 }
